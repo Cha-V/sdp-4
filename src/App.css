@@ -6,40 +6,26 @@ body {
   --boxshadow: #e6e1e1ce;
 }
 .sp-font {
-  font-family: "Oleo Script", cursive;
+  font-family: "Newsreader", serif;
 }
 .logo {
   color: white;
   transition: linear 1s;
-  font-family: "Oleo Script", cursive;
+  font-family: "Newsreader", serif;
 }
 .logo:hover {
-  background: linear-gradient(
-    90deg,
-    rgb(247, 64, 207) 0%,
-    rgba(11, 113, 172, 0.966) 100%
-  );
+  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 }
 
 .navbar {
-  background: rgb(0, 212, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 212, 255, 1) 11%,
-    rgba(100, 209, 78, 1) 98%
-  );
-  box-shadow: -1.6px 3px 4px rgb(201, 245, 224);
-  
-  position: sticky;
-  top:0px;
-  z-index: 2;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
 .headline {
-  font-family: "Oleo Script", cursive;
-  color: var(--aqua3);
-  box-shadow: -1.6px 3px 10px var(--color4);
+  font-family: "Newsreader", serif;
+  color: #4b6cb7;
+  box-shadow: -1.6px 1px 10px #4b6cb7;
   border-radius: 0.5em;
   margin-bottom: 3vh;
 }
@@ -69,11 +55,7 @@ body {
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 }
 .nav-link:hover {
-  background: linear-gradient(
-    90deg,
-    rgb(247, 64, 207) 0%,
-    rgba(11, 113, 172, 0.966) 100%
-  );
+  background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
 
