@@ -1,3 +1,10 @@
+.about {
+  border: 5px outset linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  text-align: center;
+  color: white;
+  font-family: "Times New Roman", serif;
+}
 body {
   --color1: #61a4bc;
   --color2: #1a132f;

@@ -85,8 +85,30 @@ function About() {
       <html>
         <head></head>
         <body>
-          <h1>TimeBrief</h1>
-          <p>This is a paragraph.</p>
+          <div class="about">
+            <h1>
+              TimeBrief is a one stop news portal that accumulates news from all
+              the news sites divided into categories for ease of usage.
+            </h1>
+            <br></br>
+            <h1>
+              This project is developed as a part of Skill Development Project -
+              4 at KLU
+            </h1>
+            <br></br>
+            <h1>Our team consists of:</h1>
+            <br></br>
+            <h1>Karthik Reddy Anumula</h1>
+            <br></br>
+            <h1>Venkateswar Challagulla</h1>
+            <br></br>
+            <h1>Hemanth Sai Chintada</h1>
+            <br></br>
+            <h1>
+              This project is developed using React, news API, django and
+              deployed through AWS
+            </h1>
+          </div>
         </body>
       </html>
     </div>

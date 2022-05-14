@@ -15,7 +15,7 @@ A Reactjs web App to get daily news including categories.
 Clone the project
 
 ```bash
-  git clone https://github.com/0Pixel0/news-monk
+  git clone https://github.com/Cha-V/sdp-4
 ```
 
 Go to the project directory

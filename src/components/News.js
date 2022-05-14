@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Loading from "./Loading";
 import NewsItem from "./NewsItem";
 import PropTypes from "prop-types";
+const proxyUrl = "https://api.codetabs.com/v1/proxy?quest=";
+
 export class News extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +19,7 @@ export class News extends Component {
   // function to handle next and previous.
   async handleNext() {
     window.scrollTo(0, 0); //scrolls to top on rendering.
-    let url = `https://newsapi.org/v2/top-headlines?country=${
+    let url = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=${
       this.props.country
     }&category=${
       this.props.category
@@ -35,7 +37,7 @@ export class News extends Component {
   }
   async handlePrevious() {
     window.scrollTo(0, 0);
-    let url = `https://newsapi.org/v2/top-headlines?country=${
+    let url = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=${
       this.props.country
     }&category=${
       this.props.category
@@ -121,7 +123,7 @@ export class News extends Component {
   //didMount
   async componentDidMount() {
     window.scrollTo(0, 0);
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f59178ab70df48bc83797911eebc20d9&page=1&pageSize=${this.props.pageSize}`;
+    const url = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=f59178ab70df48bc83797911eebc20d9&page=1&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
